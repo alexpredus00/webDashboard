@@ -1,0 +1,146 @@
+html,
+body {
+    background-color: grey;
+    margin: 0px;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 15% 85%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: blue;
+    grid-area: 1 / 1 / span 2 / span 1;
+    border-right: 8px solid black;
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(30, 60px);
+    grid-gap: 15px;
+}
+
+.header {
+    background-color: red;
+    display: grid;
+    grid-template-rows: 35% 65%;
+}
+
+.content {
+    background-color: green;
+    display: grid;
+    grid-template-columns: 73% 27%;
+    grid-template-rows: 10% 45% 45%;
+}
+
+.sidebar * {
+    border: 2px solid white;
+    height: 60px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.sideButton1 {
+    grid-area: 1 / 1 / span 4 / 1;
+}
+
+.headerTop * {
+    border: 2px solid white;
+}
+
+.headerBottom * {
+    border: 2px solid white;
+}
+
+.headerTop {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 10% 40% 10% 15% 25%;
+}
+
+.headerBottom {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 25% 45% 10% 10% 10%;
+}
+
+.content > div {
+    border: 2px solid white;
+}
+
+.projectList {
+    grid-area: 2 / 1 / 4 / 1;
+}
+
+.annList {
+    width: 85%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.announcement {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    margin: 1vh;
+    border-bottom: 2px solid grey;
+    overflow: scroll;
+}
+
+.announcement > div {
+    margin-left: 2vh;
+    text-align: flex-start;
+
+}
+
+.announcementHeader h1 {
+    font-size: 20px;
+}
+
+.annoucementParagraph p {
+    font-size: 14px;
+}
+
+.trendingList {
+    background-color: white;
+    width: 85%;
+    height: 90%;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.trendingList * {
+    border: 2px solid grey;
+}
+
+.trendingTab {
+    margin-left: 2vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+}
+
+.trendingUser {
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+
+.trendingUserIcon {
+
+}
+
+.trendingUserTag {
+
+}
+
+.trendingUserName {
+
+}
