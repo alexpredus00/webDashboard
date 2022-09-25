@@ -3,6 +3,7 @@ body {
     background-color: grey;
     margin: 0px;
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -15,17 +16,18 @@ body {
 }
 
 .sidebar {
-    background-color: blue;
+    background-color: #0e7490;
     grid-area: 1 / 1 / span 2 / span 1;
-    border-right: 8px solid black;
+    border-right: 8px solid #115e59;
     display: grid;
     align-items: center;
-    grid-template-rows: repeat(30, 60px);
+    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10fr;
     grid-gap: 15px;
+    overflow: hidden;
 }
 
 .header {
-    background-color: red;
+    background-color: #ecfeff;
     display: grid;
     grid-template-rows: 35% 65%;
 }
@@ -37,15 +39,16 @@ body {
     grid-template-rows: 10% 45% 45%;
 }
 
-.sidebar * {
-    border: 2px solid white;
-    height: 60px;
+.sidebar > div {
+
+
     width: 80%;
     margin-left: 10%;
 }
 
-.sideButton1 {
-    grid-area: 1 / 1 / span 4 / 1;
+.sideLogo {
+    margin-right: 20%;
+    border-bottom: 1px solid white;
 }
 
 .headerTop * {
@@ -144,3 +147,92 @@ body {
 .trendingUserName {
 
 }
+
+
+
+.projectList {
+    display: grid;
+    width: 90%;
+    height: 95%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 5%;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2vh;
+    overflow: hidden;
+    place-items: center;
+}
+
+.projectList > div {
+
+    border-radius: 10px;
+    width: 40vh;
+    height: 20vh;
+}
+
+.projectList:first-child {
+    margin-top: 200px;
+}
+
+.project {
+    display: grid;
+    grid-template-rows: 20% 40% 30%;
+}
+
+
+
+.projectButtons > div {
+    border: 2px solid green;
+    
+}
+
+.project > div {
+    margin-top: 2.5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.projectList > div {
+    border: 2px solid black;
+}
+
+.projectButtons {
+    display: grid;
+    margin-left: 60%;
+    width: 40%;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+
+}
+
+.sidebar > div:not(:first-child) {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+
+}
+
+.sidebar > div:not(:first-child) {
+    width: 70%;
+
+
+}
+
+.sidebar > div:not(:first-child) *{
+    color: white;
+    font-size: 26px;
+
+
+}
+
+.sideIcon {
+    margin-left: 40%;
+    margin-top: 14%;
+
+}
+
+.sideIcon img {
+    width: 55%;
+}
+
